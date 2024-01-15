@@ -1,5 +1,5 @@
-# AirBnB Clone - The Console
-The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+g# AirBnB Clone - RESTful API
+Team Project: AirBnB clone - RESTful project is a collaboration betweenUchenna Oko and Joy Chinwendu, students of Software Engineering of ALXSE program cohort 15. The console is the first segment of the AirBnB project that will collectively cover fundamental concepts of higher level programming track. We will implement some of the features at this time-RESTful API. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter iscreated in this segment to manage objects for the AirBnB(HBnB) website.
 
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
@@ -19,11 +19,11 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * [License](#license)
 
 ## Environment
-This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
+This project is interpreted/tested on Ubuntu 22.04.3 LTS using python3 (version 3.10.12)
 
 ## Installation
-* Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
-* Access AirBnb directory: `cd AirBnB_clone`
+* Clone this repository: `git clone "https://github.com/uchecom/AirBnB_clone_v3.git"`
+* Access AirBnb directory: `cd AirBnB_clone_v3`
 * Run hbnb(interactively): `./console` and enter command
 * Run hbnb(non-interactively): `echo "<command>" | ./console.py`
 
@@ -36,7 +36,7 @@ List of commands this console current supports:
 * `create` - Creates a new instance of`BaseModel`, saves it (to the JSON file) and prints the id
 * `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file). 
 * `show` - Prints the string representation of an instance based on the class name and id.
-* `all` - Prints all string representation of all instances based or not on the class name. 
+* `all` - Prints all string representation of all instances based on the class name or not. 
 * `update` - Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file). 
 
 #### `models/` directory contains classes used for this project:
@@ -54,8 +54,8 @@ Classes inherited from Base Model:
 * [state.py](/models/state.py)
 * [user.py](/models/user.py)
 
-#### `/models/engine` directory contains File Storage class that handles JASON serialization and deserialization :
-[file_storage.py](/models/engine/file_storage.py) - serializes instances to a JSON file & deserializes back to instances
+#### `/models/engine` directory contains File Storage class that handles JSON serialization and deserialization :
+[file_storage.py](/models/engine/file_storage.py) - serializes instances to a JSON file & deserializes from JSON file back to instances.
 * `def all(self)` - returns the dictionary __objects
 * `def new(self, obj)` - sets in __objects the obj with key <obj class name>.id
 * `def save(self)` - serializes __objects to the JSON file (path: __file_path)
@@ -129,7 +129,7 @@ TestBaseModel class:
 
 ## Examples of use
 ```
-vagrantAirBnB_clone$./console.py
+root@UCHENNA-OKO:/Alx/AirBnB_clone_v3# ./console.py
 (hbnb) help
 
 Documented commands (type help <topic>):
@@ -151,12 +151,11 @@ EOF  all  create  destroy  help  quit  show  update
 ```
 
 ## Bugs
-No known bugs at this time. 
+No known bugs yet at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+Uchenna Oko - [Github](https://github.com/uchecom) / [Twitter](https://twitter.com/Uchenna_Com001)  
+Joy Chinwendu - [Github](https://github.com/Te125) / [Twitter](https://twitter.com/ibom_joy)
 
-Second part of Airbnb: Joann Vuong
 ## License
-Public Domain. No copy write protection. 
+Public Domain. No copy write protection.
