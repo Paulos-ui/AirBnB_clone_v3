@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Creation of new view for City object called cities  """
+""" Creation of new view for City object """
 
 from models.city import City
 from flask import jsonify, abort, request, make_response

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Handles  API actions on Place objects called places """
+"""Handles  API actions on Place objects"""
 
 from models.state import State
 from models.amenity import Amenity
